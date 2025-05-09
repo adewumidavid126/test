@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dave's Cookies - Products</title>
+  <link rel="stylesheet" href="style(product).css" />
+</head>
+<body>
+
+  <!-- Header -->
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Dave's Cookies" class="logo-img" />
+  </div>
+
+  <nav class="desktop-nav">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index(about).html">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger" id="burger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="side-menu">
+    <ul class="side-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index(about).html">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Product Section -->
+  <section id="products" class="product-section">
+    <div class="section-title">
+      <h2>Our Delicious Cookies</h2>
+      <p>Explore our range of handcrafted cookies made with love.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/choc-chip.jpg" alt="Chocolate Chip Cookie">
+        <h3>Classic Chocolate Chip</h3>
+        <p>Soft, chewy, and loaded with rich chocolate chips.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/oatmeal.jpg" alt="Oatmeal Raisin Cookie">
+        <h3>Oatmeal Raisin</h3>
+        <p>Wholesome oats and sweet raisins for a nostalgic taste.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/peanut-butter.jpg" alt="Peanut Butter Cookie">
+        <h3>Peanut Butter Bliss</h3>
+        <p>Creamy peanut butter packed into a melt-in-your-mouth cookie.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/double-choc.jpg" alt="Double Chocolate Cookie">
+        <h3>Double Chocolate</h3>
+        <p>Rich cocoa cookie with chocolate chunks inside and out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Dave's Cookies. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for Burger Menu -->
+  <script>
+    const burger = document.getElementById('burger-icon');
+    const sideMenu = document.getElementById('side-menu');
+
+    burger.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

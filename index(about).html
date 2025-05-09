@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Dave's Cookies</title>
+  <link rel="stylesheet" href="style(about).css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <!-- Logo Image -->
+      <img src="images/logo.png" alt="Dave's Cookies" class="logo-img">
+    </div>
+     <div class="company-name">
+        <h1>Dave's Cookies Company</h1>
+      </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="index(product).htm">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Burger Menu Icon -->
+    <div class="burger" id="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="side-menu">
+    <ul class="side-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="index(product).htm">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-left">
+      <h2>About Dave’s Cookies Company</h2>
+      <p>At Dave’s Cookies, we believe that something as simple as a cookie can spark joy, build memories, and create connections. Since 1995, we have been crafting delicious, fresh-baked cookies that delight our customers with every bite.</p>
+      
+      <p>Our mission is simple: to bake the best cookies using only the finest ingredients. Whether you're enjoying one of our classic chocolate chip cookies, or something more adventurous like our double chocolate peanut butter delight, we ensure every cookie that leaves our bakery is baked with care, quality, and love.</p>
+
+      <p>We’re committed to providing a product that doesn’t just taste good, but makes a difference. That’s why we source ingredients from local suppliers and strive for sustainability in every step of our baking process. Each cookie is a testament to our passion for perfection and our desire to bring joy to your day.</p>
+
+      <h3>Our Values</h3>
+      <ul class="about-values">
+        <li>Quality Ingredients: We use only the highest quality ingredients, sourced locally and sustainably.</li>
+        <li>Customer Focus: Our customers are at the heart of everything we do. We constantly evolve to meet your needs.</li>
+        <li>Community Engagement: We support local charities and events, making a positive impact in the communities we serve.</li>
+        <li>Environmental Responsibility: We’re committed to reducing our environmental footprint, from using eco-friendly packaging to minimizing food waste.</li>
+      </ul>
+
+      <p>Whether you're buying a single cookie or placing a bulk order for an event, you can trust that Dave’s Cookies will deliver a delightful experience. Our cookies have become a staple at birthday parties, office gatherings, and even weddings, and we love being part of your special moments.</p>
+
+      <h3>Our Story</h3>
+      <p>What started as a small family-owned bakery in the heart of the city has now grown into a beloved brand known for its signature cookies. Dave, a passionate baker, began experimenting with recipes in his kitchen over 25 years ago, and after years of perfecting his craft, Dave’s Cookies was born.</p>
+
+      <p>From our humble beginnings to our current success, we've always focused on the same values that made us who we are today: great cookies, a commitment to quality, and a love for our community. We’re grateful for the continued support of our customers and are excited to share our cookies with future generations.</p>
+    </div>
+
+    <div class="about-right">
+      <img src="https://via.placeholder.com/500x400.png?text=Fresh+Baked+Cookies" alt="Fresh cookies">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Dave's Cookies. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Burger Menu -->
+  <script>
+    const burger = document.getElementById('burger-icon');
+    const sideMenu = document.getElementById('side-menu');
+
+    burger.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf3;
+  color: #4b2e00;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Header Styles */
+.header {
+  background-color: #5c3d00;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative; /* Added to ensure positioning of burger menu */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  width: 120px; /* Adjust the width of the logo */
+  height: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Burger Menu Icon */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger span {
+  background-color: white;
+  height: 4px;
+  width: 100%;
+}
+
+/* Side Menu Styles */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden on the right */
+  width: 250px;
+  height: 100%;
+  background-color: #5c3d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.active {
+  right: 0; /* Slide in from the right */
+}
+
+.side-menu-links {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.side-menu-links li {
+  margin: 20px 0;
+}
+
+.side-menu-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.side-menu-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for Burger Menu (Mobile view) */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-left h2 {
+  font-size: 2.6rem;
+  color: #5c3d00;
+  margin-bottom: 20px;
+}
+
+.about-left h3 {
+  font-size: 1.6rem;
+  color: #a16800;
+  margin-top: 30px;
+}
+
+.about-left p {
+  font-size: 1.125rem;
+  margin-bottom: 18px;
+}
+
+.about-values {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-values li {
+  padding-left: 1.5rem;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.about-values li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #d9a443;
+  font-weight: bold;
+}
+
+.about-right {
+  flex: 1;
+  text-align: center;
+}
+
+.about-right img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #5c3d00;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
